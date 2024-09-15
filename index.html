@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+
+  <body>
+    <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/targets_SI.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-assets>
+	<a-asset-item id="fullcharacters" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-GA-deployment@gh-pages/characters-complete1.glb"></a-asset-item>
+	<a-asset-item id="fullcharacters2" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-GA-deployment@gh-pages/characters-complete2.glb"></a-asset-item>
+	<a-asset-item id="bear1" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/bear1.glb"></a-asset-item>
+	<a-asset-item id="bear2" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/bear2.glb"></a-asset-item>
+	<a-asset-item id="bear3" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/bear3.glb"></a-asset-item>
+	<a-asset-item id="bear4" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/bear4.glb"></a-asset-item>
+	<a-asset-item id="llama1" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/llama1.glb"></a-asset-item>
+	<a-asset-item id="llama2" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/llama2.glb"></a-asset-item>
+	<a-asset-item id="llama3" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/llama3.glb"></a-asset-item>
+	<a-asset-item id="llama4" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/llama4.glb"></a-asset-item>
+	<a-asset-item id="llama5" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/llama5.glb"></a-asset-item>
+	<a-asset-item id="condor1" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/condor2.glb"></a-asset-item>
+	<a-asset-item id="condor2" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/condor2.glb"></a-asset-item>
+	<a-asset-item id="condor3" src="https://cdn.jsdelivr.net/gh/SDynamicsResearchLab/ar-book-SI-deployment@gh-pages/condor3.glb"></a-asset-item>
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#fullcharacters" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 1">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#fullcharacters2" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 2">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#fullcharacters2" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 3">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#bear1" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 4">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#bear2" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 5">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#bear3" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 6">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#bear4" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 7">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#llama1" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 8">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#llama2" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 9">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#llama3" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 10">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#llama4" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 11">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#llama5" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 12">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#condor1" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 12">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#condor2" animation-mixer>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 13">
+	<a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#condor3" animation-mixer>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
